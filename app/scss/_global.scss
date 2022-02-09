@@ -1,6 +1,41 @@
-
-
-body{
-
-
+body {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  @include montserrat-400;
 }
+
+.button{
+  @include spectral-600;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 13px 45px;
+  border-radius: 49px;
+  background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+  color: #fff;
+  &:hover{
+    background: linear-gradient(102.48deg, #7B4646 -29.03%, #BF9191 97.75%);
+  }
+  &:active{
+    background: transparent;
+    border: 1px solid #CFA5A5;
+    color: #976464;
+  }
+}
+.button-2{
+  margin-right: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #bdbdbd;
+  border: 1px solid #bdbdbd;
+  border-radius: 46px;
+  &:hover{
+    border: 1px solid #CFA5A5;
+    color: #976464;
+  }
+}
+
+

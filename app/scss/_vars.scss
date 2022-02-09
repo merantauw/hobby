@@ -1,0 +1,26 @@
+$default: #5e5c5a;
+$pink: #976464;
+
+@mixin montserrat-400 {
+  font-family: "Montserrat-Regular", serif;
+  font-weight: 400;
+}
+@mixin montserrat-600 {
+  font-family: "Montserrat-SemiBold", serif;
+  font-weight: 600;
+}
+@mixin montserrat-900 {
+  font-family: "Montserrat-Black", serif;
+  font-weight: 900;
+}
+@mixin spectral-normal {
+  font-family: "Spectral-Medium", serif;
+  font-weight: 500;
+}
+@mixin spectral-500 {
+  font-family: "SpectralSC-Medium", serif;
+  font-weight: 500;
+}
+@mixin spectral-600{
+  font-family: "SpectralSC-SemiBold", serif;
+}
