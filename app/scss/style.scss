@@ -1,0 +1,112 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+
+.container {
+  max-width: 1650px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  &__contacts {
+    background: linear-gradient(102.48deg, #976464 -29.03%, #cfa5a5 97.75%);
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding: 13px 0;
+  }
+  &__item {
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    padding-left: 22px;
+  }
+  &__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    background-image: url("../images/icons/phone.png");
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+  }
+  &__item:nth-child(2)::before {
+    background-image: url("../images/icons/geo.png");
+  }
+  &__item:last-child::before {
+    background-image: url("../images/icons/time.png");
+  }
+  &__menu {
+    padding: 45px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__buttons {
+    button,
+    a,
+    input {
+      position: relative;
+      margin-right: 50px;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      color: #bdbdbd;
+      border: 1px solid #bdbdbd;
+      border-radius: 46px;
+    }
+    input::before,
+    button::before,
+    a::before{
+      content: '';
+      position: absolute;
+      // background-image: url(../images/icons/search.png);
+      background-repeat: no-repeat;
+      top: 12px;
+      left: 20px;
+      width: 12px;
+      height: 12px;
+    }
+    a::before{
+      width: 15px;
+      background-image: url(../images/icons/heart.png);
+    }
+    a:last-child::before{
+      background-image: url(../images/icons/cart.png);
+    }
+    a:last-child,
+    input::placeholder {
+      margin-right: 0;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      color: #bdbdbd;
+    }
+    input {
+      padding: 10px 20px 10px;
+      min-width: 200px;
+    }
+    button,
+    a{
+      padding: 10px 20px 10px 40px;
+    }
+  }
+}
+.menu__item {
+  font-size: 16px;
+  line-height: 20px;
+  color: #424242;
+  font-weight: 600;
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@import "media";
