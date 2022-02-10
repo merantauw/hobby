@@ -546,6 +546,48 @@
   }
 }
 
+.faq{
+  padding: 65px 0;
+  &__form{
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  &__input{
+    padding-left: 20px;
+    max-height: 50px;
+    position: relative;
+    margin-right: 30px;
+    outline: none;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #525252;
+    border: 1px solid #bdbdbd;
+    border-radius: 46px;
+    &::placeholder{
+      padding: 10px 10px 10px 20px;
+      min-width: 200px;
+      margin-right: 0;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      color: #bdbdbd;
+    }
+    &:focus{
+      border: 1px solid #cfa5a5;
+    }
+  }
+  &__send button{
+    margin-bottom: 8px;
+  }
+  &__text{
+    font-size: 12px;
+    line-height: 17px;
+    max-width: 240px;
+  }
+}
+
 .footer {
   padding: 65px 0;
   background: linear-gradient(267.48deg, #ececd5 56.22%, #d7d7b9 130.03%);
