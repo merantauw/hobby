@@ -23,6 +23,9 @@
     display: flex;
     justify-content: space-between;
   }
+  &__title{
+    text-align: left;
+  }
   &__item {
     position: relative;
     font-size: 14px;
@@ -70,17 +73,6 @@
       border: 1px solid #bdbdbd;
       border-radius: 46px;
     }
-    input::before,
-    button::before,
-    a::before {
-      content: "";
-      position: absolute;
-      background-repeat: no-repeat;
-      top: 12px;
-      left: 20px;
-      width: 12px;
-      height: 12px;
-    }
     input {
       background: url(../images/icons/search.png) 92% 50% no-repeat;
       &:hover,
@@ -89,15 +81,13 @@
         color: #976464;
       }
     }
-    button::before {
-      background-image: url(../images/icons/man.png);
+    a svg{
+      position: absolute;
+      top: 35%;
+      left: 15%;
     }
-    a::before {
-      width: 15px;
-      background-image: url(../images/icons/heart.png);
-    }
-    a:last-child::before {
-      background-image: url(../images/icons/cart.png);
+    a:active svg path{
+      fill: #fff;
     }
     a:last-child,
     input::placeholder {
@@ -105,7 +95,6 @@
       font-size: 14px;
       line-height: 17px;
       font-weight: 400;
-      color: #bdbdbd;
     }
     input {
       padding: 10px 30px 10px 20px;
@@ -115,9 +104,10 @@
     a {
       padding: 10px 20px 10px 40px;
     }
-  }
-  &__cart:active {
-    color: #fff;
+    .header__cart svg{
+      left: 17%;
+      top: 38%;
+    }
   }
   &__liked-count,
   &__cart-count {
@@ -200,6 +190,9 @@
     margin-right: 25px;
   }
 }
+a.menu__link:hover{
+  @include montserrat-600;
+}
 
 .checkbox input {
   position: absolute;
@@ -278,19 +271,16 @@
     max-width: 300px;
     width: 100%;
     height: 487px;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(180deg, rgba(80, 80, 80, 0.08) 50.1%, rgba(46, 46, 46, 0.59) 100%);
-      border-radius: 23px;
-    }
+    transition: transform 1s ease-out;
   }
-
-  &__link {
+  &__item:hover .products__item-text{
+    transform: scale(1.15);
+    transition: transform 1s ease-out;
+  }
+  &__item-link{
+    position: absolute;
+  }
+  &__item-text {
     position: absolute;
     bottom: 25px;
     left: 35px;
@@ -313,22 +303,14 @@
 
 .product__photo img {
   border-radius: 24px;
+  filter: brightness(0.7);
 }
+
 
 .catalog {
   background-color: #e8e8e8;
   padding: 65px 0 90px;
   position: relative;
-  &__decor {
-    position: absolute;
-    top: -5%;
-    left: -5%;
-    @include spectral-500;
-    font-size: 246px;
-    line-height: 350px;
-    text-transform: uppercase;
-    color: rgba(94, 92, 90, 0.03);
-  }
   &__list {
     display: flex;
     justify-content: space-between;
@@ -547,6 +529,8 @@
 }
 
 .faq{
+  position: relative;
+  background-color: #e8e8e8;
   padding: 65px 0;
   &__form{
     padding-left: 30px;

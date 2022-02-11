@@ -44,16 +44,32 @@
           </li>
         </ul>
         <div class="header__logo">
-          <img src="images/logo.png" alt="логотип">
+          <a href="#"><img src="images/logo.png" alt="логотип"></a>
         </div>
         <div class="header__buttons">
           <input type="text" placeholder="Поиск товара">
-          <button class="header__login button-2">Войти</button>
+          <a href="#" class="header__login button-2">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.3125 13.125C3.3125 13.125 2.375 13.125 2.375 12.1875C2.375 11.25 3.3125 8.4375 8 8.4375C12.6875 8.4375 13.625 11.25 13.625 12.1875C13.625 13.125 12.6875 13.125 12.6875 13.125H3.3125ZM8 7.5C8.74592 7.5 9.46129 7.20368 9.98874 6.67624C10.5162 6.14879 10.8125 5.43342 10.8125 4.6875C10.8125 3.94158 10.5162 3.22621 9.98874 2.69876C9.46129 2.17132 8.74592 1.875 8 1.875C7.25408 1.875 6.53871 2.17132 6.01126 2.69876C5.48382 3.22621 5.1875 3.94158 5.1875 4.6875C5.1875 5.43342 5.48382 6.14879 6.01126 6.67624C6.53871 7.20368 7.25408 7.5 8 7.5Z" fill="#976464"/>
+              </svg>
+            Войти
+          </a>
           <a class="header__liked button-2" href="#">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.8334 2.97111C12.3123 1.90167 10.8111 1.02667 9.06503 1.53611C8.23065 1.77712 7.50267 2.29398 7.00003 3.00223C6.49739 2.29398 5.76941 1.77712 4.93503 1.53611C3.18503 1.03445 1.68781 1.90167 1.1667 2.97111C0.435585 4.46834 0.738919 6.15223 2.06892 7.97612C3.11114 9.40334 4.60059 10.85 6.76281 12.53C6.83114 12.5833 6.91532 12.6122 7.00197 12.6122C7.08863 12.6122 7.17281 12.5833 7.24114 12.53C9.39947 10.8539 10.8928 9.41889 11.935 7.97612C13.2611 6.15223 13.5645 4.46834 12.8334 2.97111Z"
+                fill="#976464" />
+            </svg>
             Избранное
             <span class="header__liked-count">2</span>
           </a>
-          <a class="header__cart button-2" href="#">Корзина
+          <a class="header__cart button-2" href="#">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.08127 0.555126L3.2142 3.66666H7.7858L5.918 0.555126L6.54867 0.178192L8.64087 3.66666H10.4845C10.769 3.66666 11 3.89766 11 4.18219V4.50413C11 6.66288 10.4974 8.79198 9.53187 10.7228C9.49018 10.8061 9.42612 10.8762 9.34685 10.9252C9.26758 10.9741 9.17624 11 9.08307 11H1.91693C1.8237 10.9999 1.73234 10.9738 1.65308 10.9247C1.57382 10.8756 1.50978 10.8055 1.46813 10.7221C0.502632 8.79125 -1.72126e-05 6.66215 4.42075e-10 4.50339L4.42076e-10 4.18219C4.42076e-10 3.89766 0.231 3.66666 0.515533 3.66666H2.35913L4.45133 0.178192L5.08053 0.555126H5.08127Z"
+                fill="#976464" />
+            </svg>
+            Корзина
             <span class="header__cart-count">1</span>
           </a>
         </div>
@@ -61,15 +77,16 @@
 
       <div class="slider__container">
         <div class="slider__numbers" style="display: block;">
-          <span class="active">1</span> / <span class="total"></span>
+          <span class="slider__counter">1</span><span class="total"> / 5</span>
         </div>
         <div class="header__slider">
+
           <div class="header__slide">
             <div class="header__img-box">
               <img src="images/yarn.png" alt="yarn picture">
             </div>
             <div class="header__content-box">
-              <h2 class="title">ПРЯЖА MACRAMETR</h2>
+              <h2 class="header__title title">ПРЯЖА MACRAMETR</h2>
               <p class="header__text">
                 Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому
                 кругу (специалистов) участие в формировании форм воздействия.
@@ -82,7 +99,20 @@
               <img src="images/yarn.png" alt="yarn picture">
             </div>
             <div class="header__content-box">
-              <h2 class="title">ПРЯЖА MACRAMETR</h2>
+              <h2 class="header__title title">Мулине шмулине</h2>
+              <p class="header__text">
+                Самый популярный материал для ручной вышивки – разноцветные нити мулине. С их помощью рукодельницы
+                создают великолепные картины, украшают орнаментом одежду.
+              </p>
+              <a class="button" href="#">В каталог</a>
+            </div>
+          </div>
+          <div class="header__slide">
+            <div class="header__img-box">
+              <img src="images/yarn.png" alt="yarn picture">
+            </div>
+            <div class="header__content-box">
+              <h2 class="header__title title">ПРЯЖА MACRAMETR</h2>
               <p class="header__text">
                 Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому
                 кругу (специалистов) участие в формировании форм воздействия.
@@ -95,7 +125,20 @@
               <img src="images/yarn.png" alt="yarn picture">
             </div>
             <div class="header__content-box">
-              <h2 class="title">ПРЯЖА MACRAMETR</h2>
+              <h2 class="header__title title">Мулине шмулине</h2>
+              <p class="header__text">
+                Самый популярный материал для ручной вышивки – разноцветные нити мулине. С их помощью рукодельницы
+                создают великолепные картины, украшают орнаментом одежду.
+              </p>
+              <a class="button" href="#">В каталог</a>
+            </div>
+          </div>
+          <div class="header__slide">
+            <div class="header__img-box">
+              <img src="images/yarn.png" alt="yarn picture">
+            </div>
+            <div class="header__content-box">
+              <h2 class="header__title title">ПРЯЖА MACRAMETR</h2>
               <p class="header__text">
                 Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому
                 кругу (специалистов) участие в формировании форм воздействия.
@@ -103,6 +146,7 @@
               <a class="button" href="#">В каталог</a>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -125,61 +169,120 @@
           <div class="products__slider">
 
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-1.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Пряжа Macrametr</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-1.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Пряжа Macrametr
+                </span>
+              </a>
             </div>
+            
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-2.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Кольца бамбук</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-2.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Кольца бамбук
+                </span>
+              </a>
             </div>
+
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-3.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Трикотажная пряжа Zefirka</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-3.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Трикотажная пряжа Zefirka
+                </span>
+              </a>
             </div>
+
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-4.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Шпагат крученый</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-4.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Шпагат крученный
+                </span>
+              </a>
             </div>
+
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-5.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Джут «Арахна»</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-5.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Джут «Арахна»
+                </span>
+              </a>
             </div>
+
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-1.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Пряжа Macrametr</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-1.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Пряжа Macrametr
+                </span>
+              </a>
             </div>
+            
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-2.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Кольца бамбук</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-2.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Кольца бамбук
+                </span>
+              </a>
             </div>
+
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-3.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Трикотажная пряжа Zefirka</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-3.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Трикотажная пряжа Zefirka
+                </span>
+              </a>
             </div>
+
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-4.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Шпагат крученый</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-4.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Шпагат крученный
+                </span>
+              </a>
             </div>
+
             <div class="products__item">
-              <div class="product__photo"><img src="images/products/product-5.jpg" alt="product-photo"></div>
-              <a class="products__link" href="#">Джут «Арахна»</a>
+              <a href="#" class="products__item-link">
+                <div class="product__photo"><img src="images/products/product-5.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Джут «Арахна»
+                </span>
+              </a>
             </div>
+
             <div class="products__item">
+              <a href="#" class="products__link">
+                <div class="product__photo"><img src="images/products/product-6.jpg" alt="product-photo"></div>
+                <span class="products__item-text">
+                  Мулинэ Орихимэ
+                </span>
+              </a>
+            </div>
+            
+            <!-- <div class="products__item">
               <div class="product__photo"><img src="images/products/product-6.jpg" alt="product-photo"></div>
               <a class="products__link" href="#">Мулинэ Орихимэ</a>
-            </div>
+            </div> -->
 
           </div>
         </div>
     </section>
 
     <section class="catalog">
-      <span class="catalog__decor">каталог</span>
+      <span class="catalog__decor decor animate-left">каталог</span>
       <div class="container">
-        <h2 class="catalog__title title">
+        <h2 class="catalog__title title animate-right">
           Каталог товаров
         </h2>
-        <ul class="catalog__list">
+        <ul class="catalog__list animate-bottom">
 
           <li class="catalog__item">
             <h3 class="catalog__item-title">
@@ -284,10 +387,10 @@
 
     <section class="benefits">
       <div class="container">
-        <h2 class="benefits__title title">
+        <h2 class="benefits__title title animate-bottom">
           Хобби арт: 9 лет на рынке
         </h2>
-        <ul class="benefits__items">
+        <ul class="benefits__items animate-bottom">
 
           <li class="benefits__item benefits__item-suppliers">
             <h3 class="benefits__item-title">Поставщики</h3>
@@ -318,9 +421,9 @@
 
     <section class="instagram">
       <div class="container">
-        <h2 class="instagram__title title">наш instagram</h2>
+        <h2 class="instagram__title title animate-left">наш instagram</h2>
 
-        <div class="instagram__inner">
+        <div class="instagram__inner animate-right">
 
           <div class="instagram__item instagram__item--big">
             <img src="images/instagram/instagram-1.jpg" alt="instagram photo">
@@ -499,15 +602,16 @@
         </div>
 
         <div class="instagram__link">
-          <a class="button" href="#">@hobbyart_dv</a>
+          <a class="button animate-right" href="#">@hobbyart_dv</a>
         </div>
       </div>
     </section>
-    
+
     <section class="faq">
+      <span class="faq__decor decor animate-right">Вопросы</span>
       <div class="container">
-        <h2 class="faq__title title">Есть вопрос? Мы перезвоним!</h2>
-        <form class="faq__form" action="#">
+        <h2 class="faq__title title animate-left">Есть вопрос? Мы перезвоним!</h2>
+        <form class="faq__form animate-right" action="#">
           <input class="faq__input" type="text" placeholder="Ваше имя">
           <input class="faq__input" type="tel" placeholder="Телефон">
           <div class="faq__send">
@@ -525,7 +629,7 @@
 
         <ul class="footer__list">
           <li class="footer__item footer__logo">
-            <img src="images/logo.png" alt="логотип">
+            <a href="#"><img src="images/logo.png" alt="логотип"></a>
           </li>
           <li class="footer__item--first footer__item-phone footer__item-link">
             <a class="footer__phone" href="tel:+79247652820">+7 (924) 765 28 20</a>

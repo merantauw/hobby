@@ -3,9 +3,18 @@ body {
   line-height: 27px;
   font-weight: 400;
   @include montserrat-400;
-  // background-color: #e8e8e8;
 }
-
+.decor {
+  user-select: none;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  @include spectral-500;
+  font-size: 246px;
+  line-height: 350px;
+  text-transform: uppercase;
+  color: rgba(94, 92, 90, 0.03);
+}
 .button {
   @include spectral-600;
   font-size: 16px;
@@ -44,7 +53,7 @@ body {
   }
 }
 
-.title{
+.title {
   text-align: center;
   text-transform: uppercase;
   @include spectral-600;
