@@ -1,3 +1,4 @@
+
 body {
   font-size: 18px;
   line-height: 27px;
@@ -61,4 +62,25 @@ body {
   line-height: 43px;
   color: #424242;
   margin-bottom: 65px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -7%;
+  display: flex;
+  left: 43%;
+  li{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background-color:#976464;
+    border: 1px solid #bf9191;
+    border-radius: 50%;
+    &:not(:last-child){
+      margin-right: 15px;
+    }
+    &.slick-active{
+      background-color: red;
+    }
+  }
 }
