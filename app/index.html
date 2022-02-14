@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <div class="wrapper">
       <ul class="header__contacts">
@@ -26,15 +26,8 @@
         </div>
       </ul>
     </div>
-    <div class="container">
+    
       <div class="header__menu">
-        <div class="header__menu-btn">
-          <div class="hamburger menu-btn">
-            <div class="hamburger__span one" id="one"></div>
-            <div class="hamburger__span two" id="two"></div>
-            <div class="hamburger__span three" id="""></div>
-          </div>
-        </div>
         <ul class="menu">
           <li class="menu__item">
             <a class="menu__link" href="#">Каталог</a>
@@ -87,9 +80,15 @@
             Корзина
             <span class="header__cart-count">1</span>
           </a>
+          <div class="hamburger menu-btn">
+            <div class="hamburger__span one" id="one"></div>
+            <div class="hamburger__span two" id="two"></div>
+            <div class="hamburger__span three" id="three"></div>
+          </div>
         </div>
       </div>
 
+    <div class="header__bottom container">
       <div class="slider__container">
         <div class="slider__numbers" style="display: block;">
           <span class="slider__counter">1</span><span class="total"> / 5</span>
@@ -167,7 +166,7 @@
     </div>
   </header>
 
-  <main class="main">
+   <main class="main">
 
     <section class="products">
       <div class="container">
@@ -735,7 +734,7 @@
 
       </div>
     </div>
-  </footer>
+  </footer> 
 
   <script src="js/main.min.js"></script>
 </body>

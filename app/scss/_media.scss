@@ -1,6 +1,5 @@
 @media (max-width: 1650px) {
   .header {
-    &__buttons input,
     &__buttons a {
       margin-right: 20px;
     }
@@ -25,12 +24,11 @@
     margin-right: 15px;
   }
   .header {
-    &__buttons input,
     &__buttons a {
       margin-right: 10px;
     }
     &__search-form::before {
-      right: 12%;
+      right: 27%;
     }
   }
   .header .slick-prev {
@@ -49,23 +47,20 @@
 
 @media (max-width: 1460px) {
   .header {
-    &__menu {
-      padding: 30px 0 40px;
-    }
     &__buttons {
       display: flex;
       align-items: center;
     }
     a.header__login {
-      margin-right: 30px;
+      margin-right: 15px;
     }
     &__buttons a {
-      padding: 10px 0 10px 10px;
+      padding: 12px 14px 12px 14px;
       margin-right: 20px;
       font-size: 0;
       border: none;
       &:last-child {
-        margin: 0 15px;
+        margin: 0;
         font-size: 0;
       }
       &:active,
@@ -133,37 +128,60 @@
   }
   .header {
     .cross-btn.active {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       background-image: url(../images/icons/cross.svg);
-      background-position: center 75%;
+      background-position: center 60%;
       background-repeat: no-repeat;
       margin-left: 15px;
     }
+    // &__menu .menu{
+    //   visibility: hidden;
+    // }
     &__search-form {
       position: absolute;
       width: 20px;
-      right: 15%;
+      right: 16%;
       form input {
         visibility: hidden;
         opacity: 0;
-        transform: translateX(-150%);
-        transition: 0.5s;
+        padding: 0;
+        // transform: translateX(-150%);
+        // transition: 0.5s;
       }
       form input.active {
-        transform: translateX(-107%);
+        position: absolute;
+        right: 30px;
+        bottom: -20px;
+        padding: 10px 0 10px 20px;
+        // transform: translateX(-107%);
         min-width: 645px;
         transition-delay: 0.5s;
         visibility: visible;
         opacity: 1;
       }
       &::before {
-        top: 35%;
-        right: 15%;
+        top: 30%;
+        right: 5%;
       }
     }
     .header__search-form.on {
-      pointer-events: none;
+      &::before {
+        background: none;
+        pointer-events: none;
+      }
+    }
+    &__img-box {
+      img {
+        max-width: 85%;
+      }
+    }
+    &__content-box {
+      padding-right: 20px;
+    }
+    .slick-prev,
+    .slick-next {
+      bottom: 7%;
     }
     .slick-prev {
       right: 15%;
@@ -208,37 +226,439 @@
       }
       &:hover:nth-child(2),
       &:hover:nth-child(6) {
-        background: url(../images/catalog/good-2.png) 40% 120% no-repeat,linear-gradient(59.75deg, #c5c5a8 -2.61%, #e2e1cf 76.3%, #e2e1cf 76.3%);
+        background: url(../images/catalog/good-2.png) 40% 120% no-repeat,
+          linear-gradient(59.75deg, #c5c5a8 -2.61%, #e2e1cf 76.3%, #e2e1cf 76.3%);
       }
       &:nth-child(1),
       &:nth-child(5) {
-        background: url(../images/catalog/good-1.png) 30% 120% no-repeat,#fff;
+        background: url(../images/catalog/good-1.png) 30% 120% no-repeat, #fff;
       }
-      &-link{
+      &-link {
         font-size: 22px;
         bottom: 60px;
         left: 25px;
       }
     }
   }
-  .benefits{
-    &__item{
+  .benefits {
+    &__item {
       padding-left: 0;
       padding-top: 100px;
-      &-text,
-      &-title{
-        max-width: 300px;
+      &-title,
+      &-text {
         text-align: center;
       }
-      &-suppliers{
-        h3{
+      &-suppliers {
+        h3 {
           margin-left: 25px;
         }
       }
-      &::before{
+      &::before {
         left: 32%;
         top: -5%;
       }
     }
+    &__item-suppliers .benefits__item-text {
+      max-width: 300px;
+    }
+  }
+  .instagram {
+    &__item--big {
+      display: none;
+    }
+  }
+  .footer {
+    &__list {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+      &:last-child {
+        max-width: 100%;
+      }
+    }
+    &__form {
+      margin-bottom: 20px;
+      input {
+        max-width: 100%;
+      }
+    }
+    &__text {
+      max-width: 100%;
+    }
   }
 }
+
+@media (max-width: 821px) {
+  .header {
+    &__item {
+      &:first-child {
+        max-width: 180px;
+        width: 100%;
+      }
+      &:nth-child(2) {
+        max-width: 280px;
+      }
+    }
+    &__buttons {
+      padding-right: 15px;
+      .header__cart {
+        margin-right: 15px;
+      }
+    }
+    &__menu {
+      padding: 92px 15px 40px;
+    }
+    &__menu .menu {
+      margin-left: -15px;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      height: 100vh;
+      transform: translateY(-120%);
+      background: linear-gradient(90deg, rgb(218, 224, 225) 40%, rgb(149, 150, 150));
+      opacity: 0.95;
+      transition: all 1s;
+      a {
+        padding: 12px 0 12px 15px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    &__menu .menu.active {
+      display: block;
+      transform: translateY(0%);
+      transition: all 1s;
+    }
+    .menu-btn {
+      display: block;
+      padding: 3px;
+    }
+    &__search-form {
+      right: 26%;
+      form input {
+        font-size: 0;
+      }
+      form input.active {
+        min-width: 360px;
+        font-size: 14px;
+      }
+    }
+    .cross-btn {
+      position: absolute;
+      right: 26%;
+    }
+    &__bottom {
+      padding-top: 190px;
+    }
+    &__content-box .title {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 25px;
+    }
+    &__text {
+      max-width: 550px;
+    }
+    &__slide {
+      padding: 25px 0;
+    }
+    .slider__numbers {
+      right: 73px;
+      bottom: 33px;
+    }
+  }
+  .decor {
+    font-size: 135px;
+    line-height: 290px;
+  }
+  .catalog {
+    &__list {
+      gap: 15px;
+    }
+    &__item-title {
+      font-size: 18px;
+      padding: 35px 10px 0 10px;
+    }
+    &__item-price {
+      padding-left: 10px;
+    }
+    &__item-link {
+      left: 10px;
+    }
+    &__item:nth-child(2),
+    &__item:nth-child(6) {
+      background: url(../images/catalog/good-2.png) 15% 162% no-repeat, #fff;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__item {
+      padding-left: 16px;
+      &:first-child {
+        margin-right: 9px;
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+    &__search-form {
+      right: 55%;
+      form input {
+        background-color: #fff;
+      }
+      form input.active {
+        bottom: -100px;
+        right: -220px;
+      }
+    }
+    .cross-btn {
+      right: 54%;
+    }
+    &__img-box {
+      display: none;
+    }
+    &__content-box {
+      padding: 20px;
+    }
+    .slick-prev {
+      right: 27%;
+    }
+    .slider__numbers {
+      right: 54px;
+      bottom: 38px;
+    }
+  }
+  .products {
+    padding-bottom: 40px;
+    .checkbox__text,
+    .checkbox__text-2 {
+      padding: 0;
+    }
+    .checkbox__text::before,
+    .checkbox__text::after {
+      left: -110px;
+      top: 125%;
+    }
+    .checkbox input:checked + .checkbox__text:after {
+      left: -84px;
+    }
+  }
+  .catalog {
+    padding: 40px 0;
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__list {
+      justify-content: center;
+    }
+    &__item {
+      max-width: 310px;
+      flex-basis: auto;
+      margin-bottom: 20px;
+    }
+    &__item-title {
+      font-size: 20px;
+    }
+    &__item:nth-child(2),
+    &__item:nth-child(6) {
+      background: url(../images/catalog/good-2.png) 103% 162% no-repeat, #fff;
+    }
+  }
+  .decor {
+    font-size: 10px;
+    line-height: 1.2;
+    top: 0;
+  }
+  .benefits {
+    padding: 40px 0;
+    &__item-suppliers .benefits__item-text {
+      max-width: 100%;
+    }
+    .benefits__item-suppliers h3 {
+      margin-left: 0;
+    }
+    &__items {
+      flex-direction: column;
+    }
+    &__item {
+      margin-bottom: 25px;
+    }
+  }
+  .instagram {
+    padding: 40px 0;
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+  .faq {
+    padding: 40px 0;
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__form {
+      padding-left: 0;
+      flex-direction: column;
+    }
+    &__input {
+      padding: 20px 0 20px 20px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    &__send {
+      width: 100%;
+    }
+  }
+  .footer {
+    padding: 40px 0;
+    form {
+      .footer__btn {
+        padding: 14px 20px;
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+  .header {
+    &__top {
+      flex-direction: column;
+    }
+    &__buttons a,
+    &__buttons .header__cart,
+    a.header__login {
+      margin-right: 5px;
+    }
+    &__search-form {
+      right: 50%;
+    }
+    &__search-form form input.active {
+      bottom: -100px;
+      right: -160px;
+      min-width: 285px;
+    }
+    .cross-btn {
+      right: 49%;
+    }
+  }
+  .instagram {
+    &__item img {
+      width: 90%;
+    }
+  }
+  .faq{
+    &__send button{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-height: 767px) and (orientation: landscape) {
+  .header {
+    &__menu .menu {
+      transform: translateY(-150%);
+      visibility: visible;
+    }
+    
+    &__menu {
+      padding: 70px 15px 20px;
+    }
+    &__menu .menu a {
+      padding: 8px 0 8px 15px;
+      margin-bottom: 10px;
+    }
+    .slider__numbers {
+      right: 60px;
+    }
+  }
+  .products {
+    padding: 40px 0;
+    &-top {
+      padding-bottom: 40px;
+    }
+  }
+  .catalog,
+  .benefits,
+  .instagram,
+  .faq {
+    padding: 40px 0;
+  }
+  .benefits {
+    &__item::before{
+      left: 27%;
+    }
+    &__item-title {
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    &__item-suppliers h3 {
+      margin-left: 0;
+    }
+    &__item-text {
+      font-size: 14px;
+    }
+  }
+  .catalog {
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__list {
+      justify-content: space-evenly;
+    }
+    &__item {
+      flex-basis: 45%;
+    }
+  }
+  .instagram{
+    &__title{
+      margin-bottom: 40px;
+    }
+  }
+  .faq{
+    &__title{
+      margin-bottom: 40px;
+    }
+    &__form{
+      flex-direction: column;
+    }
+    &__input{
+      padding: 20px 0 20px 20px;
+      margin: 0 0 10px 0;
+    }
+    &__send{
+      button{
+        width: 100%;
+      }
+    }
+    &__text{
+      max-width: 100%;
+    }
+  }
+  .decor {
+    font-size: 110px;
+  }
+  .footer{
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 667px) and (max-height: 414px) and (orientation: landscape){
+  .header{
+    .cross-btn{
+      right: 31%;
+    }
+    &__search-form{
+      right: 31%;
+      form input.active{
+        right: 20px;
+        min-width: 270px;
+      }
+    }
+    .slider__numbers{
+      right: 65px;
+    }
+  }
+  .faq__form{
+    padding-left: 0;
+  }
+}
+

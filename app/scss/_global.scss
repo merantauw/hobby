@@ -5,6 +5,9 @@ body {
   font-weight: 400;
   @include montserrat-400;
 }
+.body.lock{
+  overflow: hidden;
+}
 .decor {
   user-select: none;
   position: absolute;
